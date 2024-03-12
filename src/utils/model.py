@@ -79,6 +79,22 @@ class RemoteModel:
 
         return completion.choices[0].text
 
+    def generateAnswers(self, input_text, params={}):
+        """Generate an answer using the remote API."""
+
+        try:
+            # Generate the output using the model
+            completion = openai.Completion.create(
+                model=self.model_name,
+                prompt=input_text,
+                **params
+            )
+        except Exception as e:
+            print(e)
+            return []
+
+        return completion.choices
+
     def get_max_input_length(self):
         """Returns the maximum input length allowed by the model."""
         return self.max_input_length

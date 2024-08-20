@@ -32,7 +32,3 @@ Duplicate `.env-template` to `.env` and populate it with the appropriate databas
 CONNECTION_STRING="mongodb://localhost:27017/"
 DATABASE_NAME="articlesDB"
 ```
-
-## Run
-
-TBD

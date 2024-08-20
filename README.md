@@ -4,7 +4,7 @@ Extracting triplets to monitor and analyze narrative shifts in news reports.
 
 ## Background
 
-For role labeling and embedding extraction, we adopt a three-stage processing pipeline.
+Using LLMs for role labeling and embedding extraction, we adopt a three-stage processing pipeline.
 
 ![Processing Pipeline](/processing_pipeline.jpg)
 
